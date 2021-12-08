@@ -105,9 +105,9 @@ jobs:
     steps:
       - checkout
       - restore_cache
-      cd frontend
-      npm install
-      npm audit --audit-level=critical
+        cd frontend
+        npm install
+        npm audit --audit-level=critical
 
   deploy-infrastructure:
     docker:
