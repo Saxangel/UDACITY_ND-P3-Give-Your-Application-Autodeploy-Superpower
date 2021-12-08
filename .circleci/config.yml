@@ -97,7 +97,7 @@ jobs:
       - restore_cache
         cd frontend
         npm install
-        npm audit --audit-level=critical
+        npm audit fix --audit-level=critical --force
 
   scan-backend:
     docker:
@@ -107,7 +107,7 @@ jobs:
       - restore_cache
         cd frontend
         npm install
-        npm audit --audit-level=critical
+        npm audit fix --audit-level=critical --force
 
   deploy-infrastructure:
     docker:
