@@ -75,9 +75,9 @@ jobs:
     steps:
       - checkout
       - restore_cache
-      cd frontend
-      npm install
-      npm run test
+        cd frontend
+        npm install
+        npm run test
                 
   test-backend:
     docker:
@@ -85,9 +85,9 @@ jobs:
     steps:
       - checkout
       - restore_cache
-      cd backend
-      npm install
-      npm run build
+        cd backend
+        npm install
+        npm run build
             
   scan-frontend:
     docker:
